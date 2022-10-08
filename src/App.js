@@ -1,22 +1,24 @@
 import React from "react";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import Navbar from "./components/Navbar/Navbar";
-import Projects from "./components/Projects/Projects";
-import Skills from "./components/Skills/Skills";
+import Layout from "./components/Layout/Layout";
+import { Routes, Route } from 'react-router-dom'
+
+// import About from "./components/About/About";
+// import Contact from "./components/Contact/Contact";
+// import Navbar from "./components/Navbar/Navbar";
+// import Projects from "./components/Projects/Projects";
+// import Skills from "./components/Skills/Skills";
+import './App.scss';
 
 
-export default function App() {
+function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
-      <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      
-      <Contact />
-    </main>
+    <>
+    <Routes>
+      <Route path="/" element={<Layout />} />
+    </Routes>
+    </>
   );
 }
 
 
+export default App;
