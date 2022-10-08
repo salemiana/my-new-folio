@@ -1,8 +1,13 @@
-import './Layout.scss';
+import Sidebar from '../Sidebar/sidebar'
+import './layout.scss';
 
 
 const Layout = () => {
-    return <>Hello</>
+    return ( 
+        <div className='App'>
+            < Sidebar/>
+        </div>
+    )
 }
 
 
