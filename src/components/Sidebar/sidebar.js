@@ -3,6 +3,8 @@ import './sidebar.scss'
 import LogoS from '../../assets/img/mylogo.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
     return (
@@ -21,6 +23,26 @@ const Sidebar = () => {
                 <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
             </NavLink>
         </nav>
+        <ul>
+            <li>
+                <a target='_blank' rel='noreferrer'
+                href='https://www.linkedin.com/in/salem-zerezghi/'>
+                    <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
+                </a>
+            </li>
+            <li>
+                <a target='_blank' rel='noreferrer'
+                href='https://github.com/salemiana'>
+                    <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
+                </a>
+            </li>
+            {/* <li>
+                <a target='_blank' rel='noreferrer'
+                href='https://www.linkedin.com/in/salem-zerezghi/'>
+                    <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
+                </a>
+            </li> */}
+        </ul>
     </div>)
 }
 
